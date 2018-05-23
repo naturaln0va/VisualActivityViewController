@@ -1,12 +1,15 @@
 <p align="center">
-<img src="readme-resources/vavc-header-logo.png" style="max-height: 450px;" alt="VisualActivityViewController">
+  <img src="readme-resources/vavc-header-logo.png" style="max-height: 250px;" alt="VisualActivityViewController">
 </p>
 
-[![Swift](https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat")](https://developer.apple.com/swift/)
-[![Twitter](https://img.shields.io/twitter/follow/naturaln0va.svg?style=social&label=Follow)](https://twitter.com/naturaln0va)
+<p align="center">
+<a href="https://developer.apple.com/swift/"><img src="https://img.shields.io/badge/Swift-4.1-orange.svg?style=flat" style="max-height: 250px;" alt="Swift"/></a>
+<br>
+<a href="http://twitter.com/naturaln0va"><img src="https://img.shields.io/twitter/follow/naturaln0va.svg?style=flat" style="max-height: 250px;" alt="Twitter"/></a>
+</p>
 
 <p align="center">
-<img src="readme-resources/vavc-preview.gif" style="max-height: 500px;" alt="PanelKit for iOS">
+  <img src="readme-resources/vavc-preview.gif" style="max-height: 250px;" alt="VisualActivityViewController Preview">
 </p>
 
 ## About
