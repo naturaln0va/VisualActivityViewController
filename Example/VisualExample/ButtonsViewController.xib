@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -32,28 +33,28 @@
                             <rect key="frame" x="0.0" y="0.0" width="146" height="30"/>
                             <state key="normal" title="Text Only"/>
                             <connections>
-                                <action selector="textShareButtonPressed" destination="-1" eventType="touchUpInside" id="jdT-IW-XiX"/>
+                                <action selector="textShareButtonPressed:" destination="-1" eventType="touchUpInside" id="c0e-mX-1md"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwf-8f-v6S">
                             <rect key="frame" x="0.0" y="42" width="146" height="30"/>
                             <state key="normal" title="URL Only"/>
                             <connections>
-                                <action selector="urlShareButtonPressed" destination="-1" eventType="touchUpInside" id="rl7-uE-0ce"/>
+                                <action selector="urlShareButtonPressed:" destination="-1" eventType="touchUpInside" id="ccp-GD-Xpk"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1G3-Rf-KhL">
                             <rect key="frame" x="0.0" y="84" width="146" height="30"/>
                             <state key="normal" title="Image Only"/>
                             <connections>
-                                <action selector="imageShareButtonPressed" destination="-1" eventType="touchUpInside" id="s5L-li-xKI"/>
+                                <action selector="imageShareButtonPressed:" destination="-1" eventType="touchUpInside" id="K9r-3L-LB1"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6T9-bb-BH6">
                             <rect key="frame" x="0.0" y="126" width="146" height="30"/>
                             <state key="normal" title="Text, URL, and Image"/>
                             <connections>
-                                <action selector="allShareButtonPressed" destination="-1" eventType="touchUpInside" id="Ixn-tm-OAc"/>
+                                <action selector="allShareButtonPressed:" destination="-1" eventType="touchUpInside" id="FSD-yy-fou"/>
                             </connections>
                         </button>
                     </subviews>
@@ -67,7 +68,7 @@
                 <constraint firstItem="6ku-de-RhL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="trT-Y0-LYb"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="-92" y="11"/>
+            <point key="canvasLocation" x="-276" y="-38"/>
         </view>
     </objects>
 </document>
