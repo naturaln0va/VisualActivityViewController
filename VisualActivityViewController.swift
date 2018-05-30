@@ -45,7 +45,7 @@ final class VisualActivityViewController: UIActivityViewController {
     /// The font for the preview label
     var previewFont: UIFont = UIFont.systemFont(ofSize: 18)
     
-    /// The margin from the top of the viewController's window
+    /// The margin from the top of the viewController's superview
     var previewTopMargin: CGFloat = 8
     
     /// The margin from the top of the viewController's view
@@ -148,18 +148,18 @@ final class VisualActivityViewController: UIActivityViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        guard let window = view.window else {
+        guard let superview = view.superview else {
             return
         }
         
-        window.addSubview(preview)
+        superview.addSubview(preview)
         
         let topAnchor: NSLayoutYAxisAnchor
         if #available(iOS 11.0, *) {
-            topAnchor = window.safeAreaLayoutGuide.topAnchor
+            topAnchor = superview.safeAreaLayoutGuide.topAnchor
         }
         else {
-            topAnchor = window.topAnchor
+            topAnchor = superview.topAnchor
         }
         
         let constraints = [
