@@ -127,7 +127,7 @@ final class VisualActivityViewController: UIActivityViewController {
             preview.contentView.addSubview(previewImageView)
             constraints.append(contentsOf: [
                 previewImageView.widthAnchor.constraint(equalTo: previewImageView.heightAnchor),
-                previewImageView.heightAnchor.constraint(equalToConstant: previewImageSideLength),
+                previewImageView.heightAnchor.constraint(lessThanOrEqualToConstant: previewImageSideLength),
                 previewImageView.topAnchor.constraint(equalTo: preview.topAnchor, constant: previewPadding),
                 previewImageView.leadingAnchor.constraint(equalTo: preview.leadingAnchor, constant: previewPadding),
                 previewLabel.leadingAnchor.constraint(equalTo: previewImageView.trailingAnchor, constant: previewPadding),
