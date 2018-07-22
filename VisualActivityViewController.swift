@@ -53,16 +53,16 @@ final class VisualActivityViewController: UIActivityViewController {
     
     // MARK: - Init
     
-    convenience init(text: String) {
-        self.init(activityItems: [text], applicationActivities: nil)
+    convenience init(text: String, activities: [UIActivity]? = nil) {
+        self.init(activityItems: [text], applicationActivities: activities)
     }
     
-    convenience init(image: UIImage) {
-        self.init(activityItems: [image], applicationActivities: nil)
+    convenience init(image: UIImage, activities: [UIActivity]? = nil) {
+        self.init(activityItems: [image], applicationActivities: activities)
     }
     
-    convenience init(url: URL) {
-        self.init(activityItems: [url], applicationActivities: nil)
+    convenience init(url: URL, activities: [UIActivity]? = nil) {
+        self.init(activityItems: [url], applicationActivities: activities)
     }
     
     override init(activityItems: [Any], applicationActivities: [UIActivity]?) {
