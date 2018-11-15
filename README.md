@@ -18,7 +18,7 @@ This project provides a preview of items being shared via `UIActivityViewControl
 
 ```swift
 // standard activity view controller
-let vc = UIActivityViewController(activityItems: [shareText], applicationActivities: nil)
+let vc = UIActivityViewController(activityItems: [shareText])
 
 // custom activity view controller with a preview 
 let vc = VisualActivityViewController(text: shareText)
