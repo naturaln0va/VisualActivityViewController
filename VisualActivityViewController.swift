@@ -87,7 +87,7 @@ final class VisualActivityViewController: UIActivityViewController {
         previewLabel.numberOfLines = previewNumberOfLines
         
         let attributedString = NSMutableAttributedString()
-        let baseAttributes: [NSAttributedStringKey: Any] = [.font: previewFont]
+        let baseAttributes: [NSAttributedString.Key: Any] = [.font: previewFont]
         
         for (index, item) in activityItems.enumerated() {
             if index > 0 && attributedString.length > 0 && (item is String || item is URL) {
