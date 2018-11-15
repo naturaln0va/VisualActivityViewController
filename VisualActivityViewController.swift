@@ -53,6 +53,10 @@ final class VisualActivityViewController: UIActivityViewController {
     
     // MARK: - Init
     
+    convenience init(activityItems: [Any]) {
+        self.init(activityItems: activityItems, applicationActivities: nil)
+    }
+    
     convenience init(text: String, activities: [UIActivity]? = nil) {
         self.init(activityItems: [text], applicationActivities: activities)
     }
