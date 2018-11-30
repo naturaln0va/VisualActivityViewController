@@ -114,7 +114,7 @@ final class VisualActivityViewController: UIActivityViewController {
         var constraints = [
             previewLabel.topAnchor.constraint(equalTo: preview.topAnchor, constant: previewPadding),
             previewLabel.trailingAnchor.constraint(equalTo: preview.trailingAnchor, constant: -previewPadding),
-            previewLabel.bottomAnchor.constraint(lessThanOrEqualTo: preview.bottomAnchor, constant: -previewPadding)
+            previewLabel.bottomAnchor.constraint(equalTo: preview.bottomAnchor, constant: -previewPadding)
         ]
         
         if let previewImage = activityItems.first(where: { $0 is UIImage }) as? UIImage {
@@ -152,7 +152,8 @@ final class VisualActivityViewController: UIActivityViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        guard let superview = view.superview else {
+        let isPad = UIDevice.current.userInterfaceIdiom == .pad
+        guard let superview = isPad ? presentingViewController?.view : view.superview else {
             return
         }
         
