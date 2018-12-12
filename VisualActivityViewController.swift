@@ -185,7 +185,7 @@ final class VisualActivityViewController: UIActivityViewController {
         
         UIView.animate(withDuration: fadeOutDuration, animations: {
             self.preview?.alpha = 0;
-        }) {_ in
+        }) { _ in
             self.preview?.removeFromSuperview()
         }
     }
