@@ -183,8 +183,10 @@ import UIKit
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
-        UIView.animate(withDuration: fadeOutDuration) {
+        UIView.animate(withDuration: fadeOutDuration, animations: {
             self.preview?.alpha = 0
+        }) { _ in
+            self.preview?.removeFromSuperview()
         }
     }
     
