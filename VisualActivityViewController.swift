@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class VisualActivityViewController: UIActivityViewController {
+@objcMembers final class VisualActivityViewController: UIActivityViewController {
     
     /// The preview container view
     private var preview: UIVisualEffectView!
