@@ -183,8 +183,11 @@ final class VisualActivityViewController: UIActivityViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
-        UIView.animate(withDuration: fadeOutDuration) {
-            self.preview?.alpha = 0
+        UIView.animate(withDuration: fadeOutDuration,
+                       animations: {
+                        self.preview?.alpha = 0;
+        }) { (Bool) in
+            self.preview? .removeFromSuperview()
         }
     }
     
